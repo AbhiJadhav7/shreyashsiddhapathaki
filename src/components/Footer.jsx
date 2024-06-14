@@ -23,7 +23,7 @@ const Footer = () => {
         Contact <br />
         Blogs
         </div>
-        <div className="bookacall"  ><button>Book a call</button></div>
+        <div className="bookacall"  ><button><a href="https://calendly.com/vaishnavirajput-marketinlab/30min" target="blank">Book a call</a></button></div>
       </div>
       <br /><br />
     </div>

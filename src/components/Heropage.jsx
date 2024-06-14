@@ -16,7 +16,7 @@ const Heropage = () => {
       <p> Expert SEO, content, and Social Media Solutions</p><br />
       </div>
       <div>
-      <button> Book a Call</button></div>
+      <button  ><a href="https://calendly.com/vaishnavirajput-marketinlab/30min" target='blank'> Book a Call</a></button></div>
       </div>
       <br /><br /><br /><br /><br /><br />
     </div>
