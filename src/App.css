@@ -1,38 +1,844 @@
-.App {
+.app{
+  padding: 10px 60px ;
+  margin: 0;
+  background-color: #0a1934;
+  height: 100%;
+  color: #FFFFFF;
+  font-family: Poppins;
+
+}
+.heropage{
+  max-width: 100%;
+  padding: 0 10px;
+}
+.line1{
+  border-radius: 10px; /* Optional: add border-radius for rounded corners */
+  position: absolute;
+  top: 136px;
+  left: 140px;
+  max-width: 100%;
+  height: 100%;
+  background: transparent;
+}
+.line2{
+  border-radius: 10px; /* Optional: add border-radius for rounded corners */
+  position: absolute;
+  top: 180px;
+  left: 180px;
+  max-width: 100%;
+  height: 100%;
+  background: transparent;
+}
+.blur1{
+  border-radius: 10px; /* Optional: add border-radius for rounded corners */
+  filter: blur(44px);
+  top: 60px;
+  left: 80px;
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+  background: transparent;
+}
+.herocontainer p{
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  z-index: 1;
+}
+.herocontainer h1{
+  margin: 0;
+  letter-spacing: 3px;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.herocontainer{
+  flex-direction: column; 
+  padding-top: 50px;
+  max-width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.herocontainer button{
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: x-large;
+  border: none;
+  border-radius: 18px;
+  position: relative;
+  z-index: 1;
+}
+.bookacall button{
+  position: relative;
+  z-index:4;
+  font-family: Poppins;
+  width: 200px;
+  height: 60px;
+  border: none;
+  font-weight: 500;
+  font-size: x-large;
+  border-radius: 28px;
+}
+
+/*clients*/
+.clients{
+  position: relative;
+}
+.blur2{
+  border-radius: 10px; /* Optional: add border-radius for rounded corners */
+  filter: blur(24px);
+  top: 20px;
+  right: 80px;
+  position: absolute;
+  max-width: 100%;
+  height: 110%;
+  background: transparent;
+}
+.clients h1{
+  letter-spacing: 3px;
+  font-size: 60px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gas{
+  --blur: 1.75rem;
+  --box-blur: calc(0.5 * var(--blur));
+  position: relative;
+  padding: 20px 20px;
+  width: 320px;
+  height: 450px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #d64f4f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gas .number{
+  display: block;
+  width:80% ;
+  border-top: none;
+  border-right:none ;
+  border-left: none;
+  border-bottom: 3px solid #ffffffbe;
+  padding-bottom: 30px;
+  font-size: 29px;
+}
+.gas .symbol{
+  position: relative;
+  font-weight: 500;
+ font-size: 110px; 
+ margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gas .name{
+  text-align: center;
+  letter-spacing: 0;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+
+
+.clientscontainer{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+
+/*Services*/
+.services{
+  margin-top: 160px;
+  position: relative;
+}
+.blur3{
+  border-radius: 10px; /* Optional: add border-radius for rounded corners */
+  filter: blur(34px);
+  top: 20px;
+  right: 0px;
+  position: absolute;
+  max-width: 100%;
+  height: 110%;
+  background: transparent;
+}
+.headers h1{
+  position: relative;
+  z-index: 3;
+  letter-spacing: 3px;
+  font-size: 60px;
+  text-align: center;
+}
+
+
+
+/*services*/
+.servicecard-3{
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+
+}
+.card{
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 20px 20px;
+  width: 360px;
+  height: 390px;
+}
+.card img{
+  position: absolute;
+  
+}
+
+.cardlogo{
+  position: relative;
+left:-25px ;  
+margin: 20px 0;
+width: 150px;
+height: 150px;
+z-index: 2;
+
+}
+.custom-line {
+  z-index: 2;
+  border: none; /* Remove default border */
+  height: 2px; /* Set the thickness of the line */
+  background:linear-gradient(to right, #D35151, #0194FE); /* Set the color of the line */
+  width: 20%; /* Set the width of the line */
+  margin: 20px 0; /* Add some margin for spacing */
+}
+
+.cardname{
+  z-index: 2;
+}
+.cardcontent{
+  padding: 0 10px;
+  text-align: center;
+  font-size: 12px;
+  z-index: 2;
+}
+.l1{
+  position: absolute;
+  top: 68px;
+  left: 70px;
+}
+.l2{
+  position: absolute;
+  top: -35px;
+  left: -35px;
+}
+
+
+/*About me*/
+.blur9{
+  position: absolute;
+  height: 800px;
+  width: 80%;
+  top:-280px;
+}
+.blur8{
+  position: absolute;
+  filter: blur(44px);
+  max-width: 40%;
+  right: 10px;
+  
+
+}
+.module {
+  max-width: 250px;
+  padding: 1rem;
   color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+.aboutcontainer {
+  border-width: 1px;
+  border-style: solid;
+  border-image-source: linear-gradient(to bottom, rgb(20, 139, 169), rgba(8, 29, 75, 0.751));
+  border-image-slice: 1; /* Ensures the gradient is applied evenly */
+  border-image-width: 3; /* Sets the width of the border */
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutbg{
+  margin: 0px 40px;
+  position: relative;
+  background-color: #0e263a;
+  padding: 15px;
+  border-radius: 20px;
+}
+.about1{
+  flex: 4;
+}
+.about2{
+  flex: 3;
+}
+.aboutimg{
+  width: 300px;
+  height: 300px;
+  background-color: grey;
+
+}
+.aboutimg2{
+  width: 300px;
+  height: 300px;
+  background-color: grey;
+
+}
+.aboutcontent{
+  position: relative;
+  z-index: 4;
+  font-size: 20px;
+  padding: 35px;
+flex:6
+}
+.aboutcontent2{
+  position: relative  ;
+  z-index: 4;
+  font-size: 20px;
+  padding: 35px;
+flex:6
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+/*  MY WORK */
+
+.myworkcontainer{
+  position: relative;
+}
+.blur5{
+  filter: blur(44px);
+  position: absolute;
+  top: -320px;
+  right: 50px;
+  max-width: 80%;
+}
+.blur6{
+  position: absolute;
+  filter: blur(44px);
+top: 90px;
+right: -10px;
+max-width: 80%;
+
+}
+.blur7{
+  position: absolute;
+  top: 10px;
+  max-width: 80%;
+
+  filter: blur(44px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cardcontainer{
+  position: relative;
+  z-index:0;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mycard{
+position: relative;
+width: 340px;
+height: 405px;
+margin: 15px 20px ;
+align-items: center;
+justify-content: center;
+}
+
+.myworkbg{
+  z-index: -1;
+  filter: drop-shadow(200px);
+  position: absolute;
+  width: 320px;
+  height: 380px;
+}
+.myworka{
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  bottom: 23px;
+  right: 18px;
+}
+
+.myworkcontent{
+  position: absolute;
+  max-width: 80%;
+  height: 55px;
+  z-index: 32;
+  margin-left:20px;
+  margin-right: 20px;
+  bottom: 140px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.myworkl4{
+  position: absolute;
+  top: -10px;
+}
+.redirectmywork img{
+  transition: transform 0.1s ease-in;
+}
+.redirectmywork img:hover {
+
+  transform: scale(0.8); /* Scale the div to 120% of its original size */
+}
+
+
+
+
+
+
+/*Testimonials*/
+.blur10{
+  filter: blur(20px);
+  position: absolute;
+  width: 90%;
+  height: 80%;
+}
+
+.testimonial{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 10px;
+}
+
+.testimonialcontent{
+  text-align: center;
+  position: relative;
+  width: 400px;
+  height: 380px;
+  margin:40px 20px;                                                                                  
+}
+
+.testimonialheading{
+  right: 44%;
+  top: 8%;
+  position: absolute;
+}
+
+.testimonialheading1{
+  top: 8%;
+  left: 38%;
+  position: absolute;
+}.testimonialheading3{
+  right: 28%;
+  top: 8%;
+  position: absolute;
+}
+.rating{
+  right: 28%;
+  top: 18%;
+  position: absolute;
+}
+.rating img{
+  max-width: 80%;
+}
+.testcontent{
+  font-size: 14px;
+  position: absolute;
+  top: 39%;
+  left:10%;
+  width: 80%;
+  height: 60%;
+  z-index: 2;
+}
+.testimonialbg{
+  width: 98%;
+  height: 400px;
+}
+.testimonialbg2{
+  position: absolute;
+  width: 55%;
+  height: 150px;
+  bottom: 2%;
+  right: 6%;
+}
+.testimonialbg3{
+  width: 28%;
+  position: absolute;
+  top: -12%;
+  left: 5%;
+}
+.testimonialbg img{
+  max-width: 95%;
+}
+
+.testimonialbg2 img{
+  max-width: 15%;
+}
+
+
+
+
+/*Contact*/
+
+.contact{
+  position: relative;
+  
+}
+
+.blur11{
+  position: absolute;
+  filter: blur(14px);
+  width: 60%;
+  right: 10px;
+  z-index: 2;
+}
+.contactcontainer {
+  margin: 0px 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-image-source: linear-gradient(to bottom, rgb(20, 139, 169), rgba(8, 29, 75, 0.751));
+  border-image-slice: 1; /* Ensures the gradient is applied evenly */
+  border-image-width: 3; /* Sets the width of the border */
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.contactcontent{
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 4;
+  font-size: 20px;
+  width: 80%;
+}
+.contactname{
+  margin-bottom: 20px;  
+height: 50px;
+width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactname input{ 
+
+  width: 100%;
+}
+.contactform{
+ width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.contactcontent input::placeholder{
+  color: #D9D9D9;
+}
+.contactcontent input{
+  font-family : Poppins;
+  color: #D9D9D9;
+  background-color: #14406A;
+  padding-left: 10px;
+  border: none;
+  border-radius: 15px;
+  height: 55px;
+}
+input:focus {
+  outline: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove the spinner arrows in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/*Footer*/
+.footer{
+  padding-top: 10px;
+  border-top: #0e263a 1px solid;
+  display: flex;
+  justify-content: space-around;
+flex-wrap: wrap;
+padding: 10px;
+gap: 10px;
+}
+
+/*MEDIA*/
+@media screen and (max-width: 840px) {
+
+  .contactform > div {
+    width: 100%; /* Ensure all child divs inside contactform take full width */
   }
-  to {
-    transform: rotate(360deg);
+  .contactcontent{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .contactcontainer{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .aboutbg{
+    margin: 10px;
+  }
+
+  .contactform{
+    
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 10px;
+  }
+  .contactform input{
+    width: 100%;
+  }
+  
+
+}
+@media screen and (max-width: 520px) {
+  .aboutcontainer{
+    padding: 0px 0px;
+    margin: 0;
+  }
+  .aboutimg{
+    width: 220px;
+    height: 220px;
+    padding: 0;
+    margin: 0;
+        background-color: grey;
+  
+  }
+  .aboutimg2{
+    width: 220px;
+    height: 220px;
+    padding: 0;
+    margin: 0;
+        background-color: grey;
+  
+  }
+.cardcontainer{
+  flex-wrap: wrap-reverse;
+}
+  .aboutcontent{
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .aboutcontent2{
+    z-index: 3;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .app{
+    padding-top:100px;
+    padding-left:0px ;
+    padding-right: 0px;
+    margin: 0;
+  }
+
+  .herocontainer h1 {
+    font-size: 50px; /* Adjust font size for smaller screens */
+    margin: 0;
+  }
+  .herocontainer p{
+    font-size: 18px;
+  }
+  .clients h1{
+    font-size: 40px;
+  }
+  .headers h1{
+    position: relative;
+    font-size: 40px;
+    z-index: 3;
+  }
+  .blur5,.blur6,.blur7{
+
+    display: none;
+  }
+ 
+}
+@media screen and (max-width: 600px)
+{
+  .cardcontainer{
+    flex-wrap: wrap-reverse;
+  }
+  .blur5{
+    filter: blur(44px);
+    position: absolute;
+    max-width: 60%;
+    z-index: 3;
+  }
+  .blur6{
+    position: absolute;
+    filter: blur(44px);
+    max-width: 60%;
+    z-index: 3;
+
+  }
+  .blur7{
+    position: absolute;
+    filter: blur(44px);
+    max-width: 60%;
+    z-index: 3;
+
+  }
+  .blur1{
+    left: 0;
+  }
+  .servicecard-3{
+    margin: 0px;
+    padding: 0;
+  }
+  .card{
+    margin: 0;
+    padding: 0;
+    width: 270px;
+    height: 290px;
+    margin-bottom: 20px;
+  }
+  .card img{
+    width: 270px;
+    height: 290px;
+    object-fit: contain;
+  }
+  .blur2{
+    height: 80%;
+    right: 0;
+  }
+  .cardlogo{
+    position: relative;
+  left:-25px ;  
+  margin: 20px 0;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  }
+  .cardlogo .lb1{
+    left: 4px;
+    width: 80px;
+  height: 80px;
+  object-fit: contain;
+  }
+
+  .custom-line {
+    z-index: 2;
+    border: none; /* Remove default border */
+    height: 2px; /* Set the thickness of the line */
+    background:linear-gradient(to right, #D35151, #0194FE); /* Set the color of the line */
+    width: 19%; /* Set the width of the line */
+    margin: 20px 0; /* Add some margin for spacing */
+  }
+  
+  .cardname{
+    font-size: 10px;
+    z-index: 2;
+  }
+  .cardcontent{
+    padding: 0 10px;
+    text-align: center;
+    font-size: 8px;
+    z-index: 2;
+  }
+  .cardlogo .l1{
+    position: absolute;
+    top: 29px;
+    left: 34px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  .cardlogo .l2{
+    position: absolute;
+    top: -5px;
+    left: -0px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  
+}
+@media screen and (max-width: 900px){
+  .blur1{
+    left: 0;
+  }
+  .aboutcontainer{
+    flex-direction: column;
+  }
+  .clientscontainer{
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .gas{
+    width: 270px;
+    margin-bottom: 10px;
   }
 }
+@media screen and (max-width:385px) {
+  .myworka{
+    right: 0;
+    width: 80px;
+    height: 80px;
+    bottom: 40px;
+  }
+}
+@media screen and (max-width: 1290px){
+  .aboutcontainer{
+    padding: 40px;
+  }
+  .line1{
+    display: none;
+  }
+  .line2{
+    display: none;
+  }
+}
+
+
+
